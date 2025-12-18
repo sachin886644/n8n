@@ -25,3 +25,24 @@
 !docker/images/n8n/docker-entrypoint.sh
 !docker/images/runners
 !docker/images/runners/n8n-task-runners.json
+
+# === Source code for root Dockerfile build (Cloud Run) ===
+!package.json
+!pnpm-lock.yaml
+!pnpm-workspace.yaml
+!turbo.json
+!tsconfig.json
+!patches
+!patches/**
+!scripts
+!scripts/**
+!packages/**
+!.npmrc
+!lefthook.yml
+!biome.jsonc
+!.github
+!.github/**
+!AGENTS.md
+
+# Exclude node_modules from source copy
+**/node_modules
